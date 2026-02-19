@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3350hfowe4uq"]
+
+[ext_resource type="Script" uid="uid://bpshobxikjxcu" path="res://Lab4/Scripts/GameManager.cs" id="1_130ec"]
+[ext_resource type="Script" uid="uid://clco4ox4th4di" path="res://Lab4/Scripts/LevelManager.cs" id="2_sia8v"]
+[ext_resource type="PackedScene" uid="uid://byugfdp4x8m14" path="res://Lab4/Scenes/menu.tscn" id="3_1ke03"]
+[ext_resource type="PackedScene" uid="uid://bslnjckcjs3ax" path="res://Lab4/Scenes/game.tscn" id="4_hstc7"]
+[ext_resource type="PackedScene" uid="uid://bd2djwtijeou1" path="res://Lab4/Scenes/options.tscn" id="5_qyk74"]
+
+[node name="Main" type="Node3D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_130ec")
+
+[node name="LevelManager" type="Node" parent="."]
+script = ExtResource("2_sia8v")
+MenuScene = ExtResource("3_1ke03")
+GameScene = ExtResource("4_hstc7")
+OptionsScene = ExtResource("5_qyk74")

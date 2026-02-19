@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bslnjckcjs3ax"]
+
+[ext_resource type="Script" uid="uid://c8sbaroewrhcc" path="res://Lab4/Scripts/Game.cs" id="1_ghklv"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_ghklv")
+
+[node name="TimerLabel" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 1084.0
+text = "Timer"
+horizontal_alignment = 1
+vertical_alignment = 1
