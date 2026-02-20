@@ -7,7 +7,7 @@ public partial class GameManager : Node
 	public static GameManager Instance { get; private set; }
 	private const string SavePath = "user://save.dat";
 
-	// High score, Default is float.MaxValue
+	// High score, Default is -1
 	public float HighScore { get; private set; } = -1f;
 
 	public override void _Ready()
